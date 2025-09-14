@@ -1,26 +1,133 @@
-# ---- Global rules ----
-
-# Byte-compiled / cache
-__pycache__/
-*.py[cod]
-
-# Virtual environments
-.venv/
-venv/
-.env/
-
-# OS junk
+# =========================
+# Global OS / Editor junk
+# =========================
 .DS_Store
 Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.orig
+*.bak
+*.tmp
 
-# IDEs/editors
+# Common IDEs
 .vscode/
 .idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
 
-# Build/dist artifacts
+# Keep placeholder files for empty dirs if you use them
+!**/.gitkeep
+!**/.keep
+
+# =========================
+# C / C++ / CMake
+# =========================
+# Any "build" dir, anywhere (CLion, CMake, etc.)
+**/build/
+**/cmake-build-*/
+# CMake scratch
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+CMakeFiles/
+CMakeUserPresets.json
+# Ninja
+build.ninja
+.ninja_log
+.ninja_deps
+# Compiled objects / libs / executables
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.exp
+*.pdb
+*.ilk
+# Coverage
+*.gcda
+*.gcno
+*.gcov
+lcov.info
+coverage/
+# Usually generated; keep if you intentionally check it in
+compile_commands.json
+
+# =========================
+# Rust
+# =========================
+**/target/
+# Cargo.lock is generally committed (especially for binaries) — do NOT ignore it by default.
+# If you decide to ignore for library crates only, uncomment next line (not recommended globally):
+# Cargo.lock
+**/*.rs.bk
+# rustfmt / clippy logs, if any
+# rust-toolchain files should be committed; don't ignore them.
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual envs (name yours however you like)
+.venv/
+venv/
+env/
+.env/
+pip-wheel-metadata/
+.pyenv/
+.python-version
+
+# Packaging / build outputs
 build/
-dist/
+**/build/
+**/dist/
 *.egg-info/
+.eggs/
 
+# Testing / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================
 # Logs
+# =========================
 *.log
+logs/
+log/
+
+# =========================
+# Extra language/tool odds & ends (uncomment if used)
+# =========================
+# Node (if any dev tools in subfolders)
+# node_modules/
+# yarn.lock  # usually commit this; don't ignore unless you know you want to
+
+# Go
+# **/bin/
+# **/pkg/
+
+# .env files (keep if you deliberately commit samples)
+.env
+.env.local
+.env.*.local
