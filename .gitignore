@@ -1,0 +1,26 @@
+# ---- Global rules ----
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+.env/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.vscode/
+.idea/
+
+# Build/dist artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
