@@ -6,3 +6,7 @@ apt-get update && apt-get install -y curl ca-certificates build-essential pkg-co
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 . $HOME/.cargo/env
 ```
+
+```
+cargo run --bin subscriber
+```
